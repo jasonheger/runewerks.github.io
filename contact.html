@@ -64,6 +64,11 @@
       outline: none;
     }
 
+    .g-recaptcha {
+      margin-bottom: 1.5em;
+      align-self: center;
+    }
+
     button {
       background-color: #56ccf2;
       color: #111;
@@ -102,13 +107,16 @@
 
     <label for="message">Your message:</label>
     <textarea id="message" name="message" rows="5" required></textarea>
-   <div class="g-recaptcha" 
-        data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" 
-        data-theme="dark"></div>
+
+    <div class="g-recaptcha" 
+         data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" 
+         data-theme="dark"></div>
+
     <button type="submit">Send</button>
   </form>
 
   <a href="index.html">← Back to Home</a>
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
